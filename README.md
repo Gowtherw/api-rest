@@ -41,7 +41,7 @@ bash
 Copiar código
 npm install
 
-3. Configurar las variables de entorno:
+3. Crear el archivo .env y configurar las variables de entorno:
 environment:
       - PORT=3000
       - DB_CNN=mongodb://mongo:27017/api-rest
