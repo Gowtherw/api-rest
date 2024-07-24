@@ -32,3 +32,7 @@ Este README está destinado a desarrolladores que desean clonar, configurar y co
 ```bash
 git clone git@github.com:Gowtherw/api-rest.git
 cd api-rest
+
+### Instala las dependencias:
+```bash
+npm install
