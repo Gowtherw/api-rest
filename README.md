@@ -4,8 +4,6 @@
 3. [Prerrequisitos](#prerrequisitos)
 4. [Instalación y Configuración](#instalación-y-configuración)
 5. [Estructura del Proyecto](#estructura-del-proyecto)
-6. [Contribuciones](#contribuciones)
-7. [Licencia](#licencia)
 
 ## Introducción
 Este README está destinado a desarrolladores que desean clonar, configurar y contribuir a este proyecto de API REST. Aquí encontrarás información sobre las tecnologías usadas, cómo instalar y configurar el proyecto, y cómo contribuir al desarrollo.
