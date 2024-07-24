@@ -80,3 +80,6 @@ api-rest/
 └── README.md
 
 ```
+
+## Author ✒️👨🏻‍
+**©️ Santiago morales castaño** - [santiagomoralescastano@gmail.com]
