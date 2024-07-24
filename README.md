@@ -38,3 +38,47 @@ cd api-rest
 ```bash
 npm install
 ```
+
+### Crear el archivo .env y configurar las variables de entorno:
+```bash
+PORT=3000
+DB_CNN=mongodb://mongo:27017/api-rest
+JWT_SECRET=T3stN0d3jS13*
+GOOGLE_API_KEY=AIzaSyBNSdXr282nzMlw3qvZJiqeDgrBSOwpw4c
+```
+### Levantar los servicios con Docker Compose:
+```bash
+docker-compose up --build
+```
+### Estructura del Proyecto:
+```
+api-rest/
+├── src/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── restaurantController.js
+│   │   ├── transactionController.js
+│   │   └── userController.js
+│   ├── middlewares/
+│   │   ├── auth.js
+│   │   └── validateFields.js
+│   ├── models/
+│   │   ├── BlacklistedToken.js
+│   │   ├── Transaction.js
+│   │   └── User.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── restaurantRoutes.js
+│   │   ├── transactionRoutes.js
+│   │   └── userRoutes.js
+│   ├── config/
+│   │   └── db.js
+│   └── index.js
+├── .env
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
+
+```
