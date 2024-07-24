@@ -12,20 +12,20 @@ Este README está destinado a desarrolladores que desean clonar, configurar y co
 Aquí encontrarás información sobre las tecnologías usadas, cómo instalar y configurar el proyecto, y cómo contribuir al desarrollo.
 
 Tecnologías Implementadas
-Node.js: Entorno de ejecución para JavaScript.
-Express: Framework para aplicaciones web.
-MongoDB: Base de datos NoSQL.
-Mongoose: ODM para MongoDB.
-Docker: Contenerización de aplicaciones.
-JWT (JSON Web Tokens): Autenticación.
-bcryptjs: Hashing de contraseñas.
-Express Validator: Validación de datos.
-Google Maps API: Búsqueda de restaurantes cercanos.
+1.Node.js: Entorno de ejecución para JavaScript.
+2.Express: Framework para aplicaciones web.
+3.MongoDB: Base de datos NoSQL.
+4.Mongoose: ODM para MongoDB.
+5.Docker: Contenerización de aplicaciones.
+6.JWT (JSON Web Tokens): Autenticación.
+7.bcryptjs: Hashing de contraseñas.
+8.Express Validator: Validación de datos.
+9.Google Maps API: Búsqueda de restaurantes cercanos.
 
 Prerrequisitos
-Node.js
-Docker
-Docker Compose
+1.Node.js
+2.Docker
+3.Docker Compose
 
 Instalación
 1. Clona el repositorio:
@@ -42,8 +42,51 @@ Copiar código
 npm install
 
 3. Configurar las variables de entorno:
-PORT=3000
-DB_CNN=mongodb://mongo:27017/pruebaTecnica
-JWT_SECRET=tu_secreto_de_jwt
-GOOGLE_API_KEY=tu_api_key_de_google
+environment:
+      - PORT=3000
+      - DB_CNN=mongodb://mongo:27017/api-rest
+      - JWT_SECRET=T3stN0d3jS13*
+      - GOOGLE_API_KEY=AIzaSyBNSdXr282nzMlw3qvZJiqeDgrBSOwpw4c
+  
+4. docker-compose up --build
+
+Documentacion de los servicios: https://documenter.getpostman.com/view/22878741/2sA3kXDfhq
+
+5. Estructura del proyecto: 
+api-rest/
+│
+├── src/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── restaurantController.js
+│   │   ├── transactionController.js
+│   │   └── userController.js
+│   │
+│   ├── middlewares/
+│   │   └── auth.js
+|   |   └── validateFields.js
+│   │
+│   ├── models/
+│   │   ├── BlacklistedToken.js
+│   │   ├── Transaction.js
+│   │   └── User.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── restaurantRoutes.js
+│   │   ├── transactionRoutes.js
+│   │   └── userRoutes.js
+│   │
+│   ├── config/
+│   │   └── db.js
+│   │
+│   └── index.js
+│
+├── .env
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
+
  
